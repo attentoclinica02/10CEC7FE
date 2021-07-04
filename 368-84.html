@@ -65,13 +65,31 @@
 
 <script>
 function CarregarDados() {
-  var nome = "Gabriel Mendonça";
-  var idade = 25;
-  document.getElementById("myText").value = nome;
+  var v_Nome = "JOAQUIM TEIXEIRA ANTUNES";
+  var v_NumASO = "36884/21";
+  var v_CPF = "021.543.638-84";
+  var v_DtRealizado = "02/07/2021";
+  var v_Responsavel = "NATAN em 02/07/2021 13:21:19";
+  
+  document.getElementById("NumASO").innerHTML = v_NumASO + ' <br>';
+  document.getElementById("Nome").innerHTML   = v_Nome + ' <br>';
+  document.getElementById("CPF").innerHTML    = v_CPF + ' <br>';
+  document.getElementById("Responsavel").innerHTML    = v_Responsavel + ' <br>';
+  document.getElementById("Data1").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data2").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data3").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data4").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data5").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data6").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data7").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data8").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data9").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data10").innerHTML = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data11").innerHTML = '<br> Realizado em '+ v_DtRealizado;
 }
 </script>
     
-<body>
+<body onload="CarregarDados()">
     <!-- <div class="container">
             <div class="header clearfix">
                 <nav class="float-left">
@@ -114,7 +132,7 @@ function CarregarDados() {
                                 NÚMERO DO ASO
                             </h4>
                             <p class="list-group-item-text">
-                                <span class="label label-danger">20897/21</span>
+                                <span class ="label label-danger" id="NumASO">20897/21</span>
                             </p>
                         </div>
 
@@ -127,9 +145,9 @@ function CarregarDados() {
                                 FUNCIONÁRIO
                             </h4>
                             <p class="list-group-item-text">
-                                <span class="label label-success">GILSON FERNANDES<br></span>
-                                <span class="label label-success" style="font-size:10px">
-                                    CPF: 639.227.208-97
+                                <span class="label label-success" id="Nome" >NOME FUNCIONARIO<br></span>
+                                <span class="label label-success" style="font-size:10px" id="CPF">
+                                    CPF: 000.111.222-88
                                 </span>
                             </p>
                         </div>
@@ -162,7 +180,7 @@ function CarregarDados() {
                                         <td>
                                             ACUIDADE VISUAL
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data1">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -171,7 +189,7 @@ function CarregarDados() {
                                         <td>
                                             AUDIOMETRIA TONAL
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data2">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -180,7 +198,7 @@ function CarregarDados() {
                                         <td>
                                             AVALIAÇÃO CLÍNICA
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data3">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -189,7 +207,7 @@ function CarregarDados() {
                                         <td>
                                             AVALIAÇÃO OFTALMOLÓGICA
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data4">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -198,7 +216,7 @@ function CarregarDados() {
                                         <td>
                                             ELETROCARDIOGRAMA
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data5">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -207,7 +225,7 @@ function CarregarDados() {
                                         <td>
                                             ELETROENCEFALOGRAMA
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data6">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -216,7 +234,7 @@ function CarregarDados() {
                                         <td>
                                             GAMA GT
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data7">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -225,7 +243,7 @@ function CarregarDados() {
                                         <td>
                                             GLICEMIA EM JEJUM
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data8">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -234,7 +252,7 @@ function CarregarDados() {
                                         <td>
                                             HEMOGRAMA COMPLETO
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data9">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -243,7 +261,7 @@ function CarregarDados() {
                                         <td>
                                             RAIO X TORAX PA
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data10">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -252,7 +270,7 @@ function CarregarDados() {
                                         <td>
                                             RX COLUNA LOMBO SACRA AP/PERFIL
 
-                                            <span class="label label-success" style="font-size:10px">
+                                            <span class="label label-success" style="font-size:10px" id="Data11">
                                                                                                     <br>Realizado em 11/06/2021
                                                                                             </span>
                                         </td>
@@ -287,7 +305,7 @@ function CarregarDados() {
                                 RESPONSÁVEL PELAS INFORMAÇÕES
                             </h4>
                             <p class="list-group-item-text">
-                                <span class="label label-success">NATAN em 11/06/2021 16:32:21</span>
+                                <span class="label label-success" id="Responsavel">TESTE em 01/01/2021 00:00:00</span>
                             </p>
                         </div>
 
