@@ -1,1 +1,329 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6f19658b6b.js" crossorigin="anonymous"></script>
+    <title>Validação de ASO</title>
+</head>
+
+<style>
+    .secpaddingTB60 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .section-title {
+        font-weight: 400;
+        letter-spacing: .5px;
+        text-transform: none;
+        color: #0;
+    }
+
+    .section-titlepara {
+        font-weight: 400;
+        text-transform: none;
+        color: #636363;
+    }
+
+    .border {
+        background: #e2e2e2;
+        height: 1px;
+        width: 265px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+
+
+    i {
+        font-size: 36px;
+        padding-right: 10px;
+        color: #aece61;
+    }
+
+    .icon-box {
+        position: relative;
+        margin-top: 20px;
+        padding: 0 0 0 80px;
+    }
+
+    .icon-left {
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        top: 0;
+        left: 0;
+    }
+
+    .icon-left i:hover {
+        color: #;
+    }
+</style>
+
+<script>
+function CarregarDados() {
+  var v_Nome = "MAIR SERGIO SUZUKI DE OLIVEIRA";
+  var v_NumASO = "24840/21";
+  var v_CPF = "133.677.248-40";
+  var v_DtRealizado = "30/08/2021";
+  var v_Responsavel = "NATAN em 30/08/2021 09:28:21";
+  
+  document.getElementById("NumASO").innerHTML = v_NumASO + ' <br>';
+  document.getElementById("Nome").innerHTML   = v_Nome + ' <br>';
+  document.getElementById("CPF").innerHTML    = v_CPF + ' <br>';
+  document.getElementById("Responsavel").innerHTML    = v_Responsavel + ' <br>';
+  document.getElementById("Data1").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data2").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data3").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data4").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data5").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data6").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data7").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data8").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data9").innerHTML  = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data10").innerHTML = '<br> Realizado em '+ v_DtRealizado;
+  document.getElementById("Data11").innerHTML = '<br> Realizado em '+ v_DtRealizado;
+}
+</script>
+    
+<body onload="CarregarDados()">
+    <!-- <div class="container">
+            <div class="header clearfix">
+                <nav class="float-left">
+                    <img src="https://s3-sa-east-1.amazonaws.com/arq1.softwareatento.com.br/img_cli/BWz96dWB0WcdADAddxBdD893x2z7z0C07Z1Z168ZwZDDDZc8D1.png?v=0"/>
+                </nav>
+                <h3 class="text-muted">ATENTO MEDICINA DO TRABALHO</h3>
+            </div>
+           
+        </div> -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-collapse collapse">
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <h1><img src="https://s3-sa-east-1.amazonaws.com/arq1.softwareatento.com.br/img_cli/BWz96dWB0WcdADAddxBdD893x2z7z0C07Z1Z168ZwZDDDZc8D1.png?v=0" />
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-12 px-0 mx-2 text-left">
+                <h2 class="section-title ">Validação de Atestado de Saúde Ocupacional</h2>
+            </div>
+
+                            <div class="col-md-12 mx-2 alert alert-success ">
+                    ASO validado com sucesso. Confira abaixo as informações contidas no documento:
+                </div>
+                <div class="col-md-12 mx-2 px-0">
+                    <div class="list-group">
+
+                        <div class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <i class="fa fa-check-square-o"></i>
+                                NÚMERO DO ASO
+                            </h4>
+                            <p class="list-group-item-text">
+                                <span class ="label label-danger" id="NumASO">20897/21</span>
+                            </p>
+                        </div>
+
+                        
+                         
+
+                        <div class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <i class="fa fa-check-square-o"></i>
+                                FUNCIONÁRIO
+                            </h4>
+                            <p class="list-group-item-text">
+                                <span class="label label-success" id="Nome" >NOME FUNCIONARIO<br></span>
+                                <span class="label label-success" style="font-size:10px" id="CPF">
+                                    CPF: 000.111.222-88
+                                </span>
+                            </p>
+                        </div>
+
+                        <div class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <i class="fa fa-check-square-o"></i>
+                                EMPRESA
+                            </h4>
+                            <p class="list-group-item-text">
+                                <span class="label label-success">
+                                    PARTICULAR<br>
+                                </span>
+
+                                <span class="label label-success" style="font-size:10px">
+                                    CNPJ: 
+                                </span>
+                            </p>
+                        </div>
+
+                                                
+                        <div class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <i class="fa fa-check-square-o"></i>
+                                EXAMES COMPLEMENTARES
+                            </h4>
+                            <table class="table">
+                                <tbody>
+                                                                        <tr>
+                                        <td>
+                                            ACUIDADE VISUAL
+
+                                            <span class="label label-success" style="font-size:10px" id="Data1">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            AUDIOMETRIA TONAL
+
+                                            <span class="label label-success" style="font-size:10px" id="Data2">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            AVALIAÇÃO CLÍNICA
+
+                                            <span class="label label-success" style="font-size:10px" id="Data3">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            AVALIAÇÃO OFTALMOLÓGICA
+
+                                            <span class="label label-success" style="font-size:10px" id="Data4">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            ELETROCARDIOGRAMA
+
+                                            <span class="label label-success" style="font-size:10px" id="Data5">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            ELETROENCEFALOGRAMA
+
+                                            <span class="label label-success" style="font-size:10px" id="Data6">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            GAMA GT
+
+                                            <span class="label label-success" style="font-size:10px" id="Data7">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            GLICEMIA EM JEJUM
+
+                                            <span class="label label-success" style="font-size:10px" id="Data8">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            HEMOGRAMA COMPLETO
+
+                                            <span class="label label-success" style="font-size:10px" id="Data9">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            RAIO X TORAX PA
+
+                                            <span class="label label-success" style="font-size:10px" id="Data10">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td>
+                                            RX COLUNA LOMBO SACRA AP/PERFIL
+
+                                            <span class="label label-success" style="font-size:10px" id="Data11">
+                                                                                                    <br>Realizado em 11/06/2021
+                                                                                            </span>
+                                        </td>
+                                    </tr>
+                                    
+                                                                    </tbody>
+                            </table>
+                        </div>
+
+                        <div class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <i class="fa fa-check-square-o"></i>
+                                RISCOS OCUPACIONAIS
+                            </h4>
+                            <table class="table">
+                                <tbody>
+                                                                        <tr>
+                                        <td>
+                                            EMPRESA SEM PPRA E SEM PCMSO
+                                            <span class="label label-success" style="font-size:10px">
+                                               <br>OUTROS
+                                            </span>
+                                        </td>
+                                    </tr>
+                                                                    </tbody>
+                            </table>
+                        </div>
+
+                        <div class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                                <i class="fa fa-check-square-o"></i>
+                                RESPONSÁVEL PELAS INFORMAÇÕES
+                            </h4>
+                            <p class="list-group-item-text">
+                                <span class="label label-success" id="Responsavel">TESTE em 01/01/2021 00:00:00</span>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                    </div>
+    </div>
+
+    <!-- <footer class="footer fixed-bottom">
+            <div class="container">
+                <span class="text-muted">
+                    <p class="pull-right"><a href="#">ATENTO MEDICINA DO TRABALHO</a></p>
+                    <p>© 2021</p>
+                </span>
+            </div>
+        </footer> -->
+
+
+</body>
+
+</html>
