@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/hmac-sha256.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/enc-base64.min.js"></script>
 <body>
 
+
+
 <script>
-document.write("Hello World!");
+  document.write("1");
+  var hash = CryptoJS.HmacSHA256("1KAD46OrT9HafiKdsXeg3f4eda2bdec17232f67c0b188af3eec11588925778000", "4OHBOnWOqaEC1mWXOpVL3yV50s0qGSRC");
+  document.write("2");
+  var hashInBase64 = hash.toString().toUpperCase();
+  document.write("3");
 </script>
 
 </body>
